@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "CompanyRegistration";
+    Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset= utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0" />
+    <title> Registro de empresa </title>
+
+    <link href="~/Content/plugins/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="~/Content/plugins/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Content/plugins/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <br /> <br /> <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <span> <label><b>Registar Empresa </b></label></span>
+
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <img src="~/Content/img/img_logo/TuLogo.png" alt="Alternate Text" alt="Avatar" width="80px" class="img-circle previsualizar      />
+                    <label for="imagen" class="input-label"><i class="fa fa-cloud-upload"></i>Subir imagen</label><input type="file" name="imagen" id="imagen" />
+
+
+                </div>
+                <div class="col-md-6">
+                    <span><label><b>Razon Social:</b></label></span>
+                    <input type="text" class="form-control" id="txtrazonsocail" name="txtrazonsocail" placeholder="Razon Social" />
+                    <span id="msjrazonsocail"></span>
+                </div>
+                <div class="col-md-3">
+                    <span><label><b>RUC:</b></label></span>
+                    <input type="text" class="form-control" id="txtruc" name="txtruc" placeholder="RUC" maxlength="11" required onkeypress="return solonumeros(event)" />
+                    <span id="msjruc"></span>
+                    <br />
+                </div>
+
+            </div>
+    </div>
+</body>
+</html>
+
